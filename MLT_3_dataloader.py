@@ -78,7 +78,7 @@ def resize(image,size=(256,256)):
 
 tran = transforms.Compose([resize,transforms.ToTensor()])
 
-path=r'.\data\image'
+path=r'.\image'
 
 image_dataset = fixed_size_image_dataset(root_dir=path,
                                            transform=tran)
